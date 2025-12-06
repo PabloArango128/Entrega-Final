@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" 
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Pastelería | Contacto</title>
+</head>
+
+<body>
+  <header>
+    <div class="div-logo">
+      <a class="logo" href="../index.html">LOGO</a>
+    </div>
+
+    <nav class="header-nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li>
+          <a href="./carrito.html" class="carrito-icono">
+            <span id="contador-carrito">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="titulo-contacto">Contáctanos</h1>
+
+    <form
+      class="form-contacto"
+      action="https://formspree.io/f/mpwyjlaw"
+      method="POST"
+    >
+      <div class="grupo-input">
+        <label for="email">Tu correo electrónico:</label>
+        <input 
+          id="email" 
+          type="email" 
+          name="email" 
+          required 
+          autocomplete="email"
+        />
+      </div>
+      
+      <div class="grupo-input">
+        <label for="mensaje">Tu mensaje:</label>
+        <textarea 
+          id="mensaje" 
+          name="mensaje" 
+          rows="5" 
+          required
+          minlength="5"
+        ></textarea>
+      </div>
+
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Sitio realizado por Pablo Arango para Talento Tech</p>
+    <nav>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Whatsapp</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="../js/contacto.js" type="module"></script>
+</body>
+</html>

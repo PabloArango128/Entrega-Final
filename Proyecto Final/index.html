@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link 
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" 
+  rel="stylesheet"
+ />
+ <link rel="stylesheet" href="./css/style.css" />
+ <title>Pastelería</title>
+</head>
+<body>
+ <header>
+  <div class="div-logo"> 
+   <a class="logo" href="./index.html">LOGO</a> 
+  </div> 
+  <nav class="header-nav">
+   <ul>
+    <li><a href="./index.html">Inicio</a></li>
+    <li><a href="./pages/contacto.html">Contacto</a></li>
+    <li>
+     <a href="./pages/carrito.html" class="carrito-icono">
+      <span id="contador-carrito">0</span>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </header>
+
+ <main>
+  <h1 class="titulo-home">Bienvenidos a la Pastelería</h1>
+  <p class="parrafo"></p>
+
+  <section>
+   <h2 class="titulo-productos">Algunos de nuestros productos</h2>
+   <div id="contenedor-tarjetas" class="contenedor-tarjetas"></div>
+  </section>
+ </main>
+
+ <footer>
+  <p>Sitio realizado por Pablo Arango para Talento Tech</p>
+  <nav>
+   <ul>
+    <li><a href="#">Instagram</a></li>
+    <li><a href="#">Whatsapp</a></li>
+   </ul>
+  </nav>
+ </footer>
+
+ <script id="productos-data" type="application/json">
+ [
+  {"id": "1", "nombre": "Producto 1", "precio": 7500, "img":"chocolate.jpg"},
+  {"id": "2", "nombre": "Producto 2", "precio": 35000, "img":"pastel.jpg"},
+  {"id": "3", "nombre": "Producto 3", "precio": 19500, "img":"selva.jpg"},
+  {"id": "4", "nombre": "Producto 4", "precio": 16500, "img":"2.jpg"}
+ ]
+ </script>
+
+ <script src="./js/index.js" type="module"></script>
+</body>
+</html>
